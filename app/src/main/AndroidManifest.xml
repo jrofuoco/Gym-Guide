@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CTRL:Gym App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AttendancePanelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".AdminScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageMembersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivityHome"
+            android:exported="false" />
+        <activity
+            android:name=".SupplementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TricepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BicepsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShoulderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BackExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AfterAfterExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AfterExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserHome"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

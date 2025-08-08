@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo"
+    tools:context=".PaymentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="9dp"
+        app:cardBackgroundColor="#e64949"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        app:layout_constraintVertical_bias="0.079">
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Pay"
+            android:textAllCaps="false"
+            android:textColor="#FBFBFB"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/paymentBackButton"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/membershipTxt2"
+        app:layout_constraintHorizontal_bias="0.360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0590"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/membershipTxt2"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:text="Payment"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="364dp"
+        android:layout_height="520dp"
+        app:cardBackgroundColor="#2d3436"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membershipTxt2"
+        app:layout_constraintVertical_bias="0.114">
+
+        <Button
+            android:id="@+id/basicmembershipDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#2d3436"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo1"
+    tools:context=".UserHome">
+
+    <ImageButton
+        android:id="@+id/profileButtonn"
+        android:layout_width="98dp"
+        android:layout_height="95dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/account1"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/usernameTxt"
+        android:layout_width="212dp"
+        android:layout_height="123dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:text="@string/user"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButtonn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/usernameTxt3"
+        android:layout_width="134dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:text="Nothing will work unless you do."
+        android:textColor="#e64949"
+        android:textSize="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButtonn"
+        app:layout_constraintVertical_bias="0.335"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <View
+            android:id="@+id/dissolveView52"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/basicmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/membershippp"
+            android:drawableTint="#e64949"
+            android:text="Membership"
+            android:textColor="#FFFFFF"
+            tools:ignore="DuplicateClickableBoundsCheck,HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView53"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView54"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/standardmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/schedulee"
+            android:drawableTint="#e64949"
+            android:text="Schedule"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/premiummembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/dumbelll"
+            android:drawableTint="#e64949"
+            android:text="Exercises"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView53"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView57"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/supplementsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/supplementary"
+            android:drawableTint="#e64949"
+            android:text="Supplements"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="13dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="380dp" />
+
+    <Button
+        android:id="@+id/backbutton17"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

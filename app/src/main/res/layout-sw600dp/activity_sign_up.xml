@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="430dp"
+        android:layout_height="790dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/logowhite" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="264dp"
+        android:layout_height="92dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Create an account"
+        android:textColor="#e6e6e6"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.090"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/alreadyhaveanaccount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:alpha="0.7"
+        android:text="Already have an account?"
+        android:textColor="#e6e6e6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/signupButton"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/signinTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:alpha="0.7"
+        android:background="@drawable/hover"
+        android:text="Sign in"
+        android:textColor="#e6e6e6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signupButton"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@+id/alreadyhaveanaccount2"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2F2D47"
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="13dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstnameInput"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:textColorHint="#8C8C8C"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.028"
+        app:startIconTint="#ffffff">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pnameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastnameInput"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:textColorHint="#8C8C8C"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.960"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstnameInput"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconTint="#ffffff">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/plastnameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressInput"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="69dp"
+        android:textColorHint="#8C8C8C"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.0"
+        app:startIconTint="#ffffff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInput"
+        android:layout_width="367dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="260dp"
+
+        android:textColorHint="#8C8C8C"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconTint="#ffffff">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

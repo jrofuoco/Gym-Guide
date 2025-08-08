@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo1"
+    tools:context=".AdminActivityHome">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView53"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/premiummembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/attenddance"
+            android:drawableTint="#e64949"
+            android:text="Attendance"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView53"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView54"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/standardmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/schedulee"
+            android:drawableTint="#e64949"
+            android:text="Schedule"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <View
+            android:id="@+id/dissolveView52"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/basicmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableLeft="@drawable/membershippp"
+            android:drawableTint="#e64949"
+            android:text="Manage Members"
+            android:textColor="#FFFFFF"
+            tools:ignore="DuplicateClickableBoundsCheck,HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/profileButton2"
+        android:layout_width="98dp"
+        android:layout_height="95dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/account1"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/usernameTxt2"
+        android:layout_width="215dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:text="Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo"
+    tools:context=".ScheduleActivity">
+
+    <TextView
+        android:id="@+id/scheduleTxt"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif-monospace"
+        android:text="Schedule"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/scheduleTxt2"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Time"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/fromInput"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <Button
+        android:id="@+id/backbutton9"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleTxt"
+        app:layout_constraintHorizontal_bias="0.360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/longbackground8"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.970"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallMembershipButton9"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallmembership"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground8"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground8"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/longbackground8"
+        app:layout_constraintTop_toTopOf="@+id/longbackground8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallExerciseButton9"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smalldumbell"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground8"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground8"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="@+id/longbackground8"
+        app:layout_constraintTop_toTopOf="@+id/longbackground8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallScheduleButton9"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallschedule"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground8"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground8"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/longbackground8"
+        app:layout_constraintTop_toTopOf="@+id/longbackground8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallSupplementsButton9"
+        android:layout_width="73dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallsupplements"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground8"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground8"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/longbackground8"
+        app:layout_constraintTop_toTopOf="@+id/longbackground8"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="399dp"
+        android:layout_height="338dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#EDE5E5"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
+
+        <CalendarView
+            android:id="@+id/calendarView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ampmInput"
+        android:layout_width="190dp"
+        android:layout_height="63dp"
+        android:textColorHint="#30ffffff"
+        app:boxStrokeColor="@color/stroke"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/fromInput"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.221"
+        app:startIconTint="#ffffff">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ampmEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Am or PM"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck,DuplicateClickableBoundsCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fromInput"
+        android:layout_width="190dp"
+        android:layout_height="63dp"
+        android:textColorHint="#30ffffff"
+        app:boxStrokeColor="@color/stroke"
+        app:helperTextTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.221"
+        app:startIconTint="#ffffff">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fromEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="190dp"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:backgroundTint="#e64949"
+        android:text="Confirm"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ampmInput"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/ampmInput"
+        app:layout_constraintTop_toBottomOf="@+id/ampmInput"
+        app:layout_constraintVertical_bias="0.039" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

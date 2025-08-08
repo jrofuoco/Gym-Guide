@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/schedulebackground"
+    tools:context=".MembershipActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView53"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/premiummembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableTint="#e64949"
+            android:text="Premium Membership"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView53"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/dissolveView54"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/standardmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableTint="#e64949"
+            android:text="Standard Membership"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#31383d"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <View
+            android:id="@+id/dissolveView52"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dissolve_gradient" />
+
+        <Button
+            android:id="@+id/basicmembershipBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:drawableTint="#e64949"
+            android:text="Basic Membership"
+            android:textColor="#FFFFFF"
+            tools:ignore="DuplicateClickableBoundsCheck,HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/membershipTxt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/longbackground"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membershipTxt"
+        app:layout_constraintVertical_bias="0.970"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallMembershipButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallmembership"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/longbackground"
+        app:layout_constraintTop_toTopOf="@+id/longbackground"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallExerciseButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smalldumbell"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="@+id/longbackground"
+        app:layout_constraintTop_toTopOf="@+id/longbackground"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallScheduleButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallschedule"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/longbackground"
+        app:layout_constraintTop_toTopOf="@+id/longbackground"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallSupplementsButton"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallsupplements"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/smallScheduleButton"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="@+id/longbackground"
+        app:layout_constraintTop_toTopOf="@+id/longbackground"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/membershipTxt"
+        android:layout_width="267dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:gravity="center"
+        android:text="Membership"
+        android:textColor="#e6e6e6"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

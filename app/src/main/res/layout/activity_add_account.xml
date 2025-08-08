@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo"
+    tools:context=".AddAccountActivity">
+
+    <Button
+        android:id="@+id/backbutton14"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0590"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="203dp"
+            android:layout_height="180dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.029"
+            app:srcCompat="@drawable/logowhite" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="264dp"
+            android:layout_height="92dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Update Account"
+            android:textColor="#e6e6e6"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.090"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addButton2"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="56dp"
+        android:layout_weight="1"
+        android:backgroundTint="#e64949"
+        android:text="Add Account"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:layout_constraintVertical_bias="0.194"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameUpdate"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.028"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pnameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastnameUpdate"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.960"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameUpdate"
+            app:layout_constraintVertical_bias="0.0"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plastnameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressUpdate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lastnameUpdate"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="@+id/nameUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/nameUpdate"
+            app:layout_constraintVertical_bias="0.0"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/paddressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderUpdate"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/nameUpdate"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nameUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/addressUpdate"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pgenderEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ageUpdate"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lastnameUpdate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lastnameUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/addressUpdate"
+            app:layout_constraintVertical_bias="0.0"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pageEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailUpdate"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lastnameUpdate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/ageUpdate"
+            app:layout_constraintVertical_bias="0.0"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInput"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:textColorHint="#ffffff"
+            app:boxStrokeColor="#2a3a46"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lastnameUpdate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/emailUpdate"
+            app:layout_constraintVertical_bias="0.0"
+            app:startIconTint="#ffffff">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ppasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

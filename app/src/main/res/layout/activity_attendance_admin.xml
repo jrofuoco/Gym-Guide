@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo"
+    tools:context=".AttendanceAdminActivity">
+
+    <Button
+        android:id="@+id/addAttendanceBtn"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#e64949"
+        android:gravity="center"
+        android:text="Add"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/searchAtendanceTxt"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercisesTxt17"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/backAttendanceutonn"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exercisesTxt17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0590"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/exercisesTxt17"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Attendance"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendanceView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAttendanceBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchAtendanceTxt"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:textColorHint="#5CFFFFFF"
+        app:boxStrokeColor="#e64949"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#e64949"
+        app:hintTextColor="#e64949"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.960"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercisesTxt17"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconTint="#e64949">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchAttendanceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:textColor="#e64949"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

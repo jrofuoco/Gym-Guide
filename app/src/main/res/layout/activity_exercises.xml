@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/exercisesbackground"
+    tools:context=".ExercisesActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="399dp"
+        android:layout_height="438dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewChest"
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/chestButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Chest"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Back"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/shoudlerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Shoulder"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/bicepButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Biceps"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/tricepButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Triceps"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#2d3436"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <View
+                    android:id="@+id/dissolveView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dissolve_gradient" />
+
+                <Button
+                    android:id="@+id/legButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Legs"
+                    android:textSize="20dp"
+                    app:cornerRadius="40dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/exercisesTxt"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Exercises"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <Button
+        android:id="@+id/backbutton2"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exercisesTxt"
+        app:layout_constraintHorizontal_bias="0.360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0590"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/longbackground3"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView"
+        app:layout_constraintVertical_bias="0.970"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallMembershipButton4"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallmembership"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground3"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground3"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/longbackground3"
+        app:layout_constraintTop_toTopOf="@+id/longbackground3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallExerciseButton4"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smalldumbell"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground3"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground3"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="@+id/longbackground3"
+        app:layout_constraintTop_toTopOf="@+id/longbackground3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallScheduleButton4"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallschedule"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground3"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground3"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/longbackground3"
+        app:layout_constraintTop_toTopOf="@+id/longbackground3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/smallSupplementsButton4"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#2d3436"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/smallsupplements"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/longbackground3"
+        app:layout_constraintEnd_toEndOf="@+id/longbackground3"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/longbackground3"
+        app:layout_constraintTop_toTopOf="@+id/longbackground3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

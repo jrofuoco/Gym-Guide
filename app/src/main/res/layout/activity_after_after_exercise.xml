@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwithoutlogo"
+    tools:context=".AfterAfterExerciseActivity">
+
+    <ImageView
+        android:id="@+id/background16"
+        android:layout_width="390dp"
+        android:layout_height="870dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercisesTxt3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.example.myapplication.ScalableVideoView
+            android:id="@+id/videoView"
+            android:layout_width="386dp"
+            android:layout_height="251dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.121" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/exercisesTxt3"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif-monospace"
+        android:text="Exercises"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/exercisesTxt4"
+        android:layout_width="198dp"
+        android:layout_height="28dp"
+        android:fontFamily="serif-monospace"
+        android:text="High Volume"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/exercisesTxt6"
+        android:layout_width="349dp"
+        android:layout_height="130dp"
+        android:fontFamily="serif-monospace"
+        android:text="."
+        android:textAlignment="viewStart"
+        android:textColor="#e6e6e6"
+        android:textSize="20sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/exercisesTxt4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/exercisesTxt7"
+        android:layout_width="349dp"
+        android:layout_height="130dp"
+        android:fontFamily="serif-monospace"
+        android:text="."
+        android:textAlignment="viewStart"
+        android:textColor="#e6e6e6"
+        android:textSize="20sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/exercisesTxt4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <TextView
+        android:id="@+id/exercisesTxt5"
+        android:layout_width="198dp"
+        android:layout_height="28dp"
+        android:fontFamily="serif-monospace"
+        android:text="Low Volume"
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/exercisesTxt4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <TextView
+        android:id="@+id/exercisesTxt8"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
+        android:fontFamily="serif-monospace"
+        android:text="Note: This may vary depending on how much weight you lift."
+        android:textColor="#e6e6e6"
+        android:textSize="35sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/exercisesTxt4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+    <Button
+        android:id="@+id/backbutton4"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:layout_weight="1"
+        android:backgroundTint="#10361938"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/backbuttoninapp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/exercisesTxt3"
+        app:layout_constraintHorizontal_bias="0.360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0590"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
